@@ -33,38 +33,38 @@ Gerekli kanalları oluşturup, kanal izinlerini sizin ayarlamanız gerekmekte.
   </tr>
   <tr>
       <td>SCOREBOARD_CHANNEL_ID</td>
-      <td>:negative_squared_cross_mark:</td>
+      <td>:white_check_mark:</td>
       <td>:x:</td>
-      <td>:negative_squared_cross_mark:</td>
-      <td>:negative_squared_cross_mark:</td>
+      <td>:white_check_mark:</td>
+      <td>:white_check_mark:</td>
   </tr>
   <tr>
       <td>CHALLENGES_CHANNEL_ID</td>
-      <td>:negative_squared_cross_mark:</td>
+      <td>:white_check_mark:</td>
       <td>:x:</td>
-      <td>:negative_squared_cross_mark:</td>
-      <td>:negative_squared_cross_mark:</td>
+      <td>:white_check_mark:</td>
+      <td>:white_check_mark:</td>
   </tr>
   <tr>
       <td>DISCUSSION_CHANNEL_ID</td>
-      <td>:negative_squared_cross_mark:</td>
-      <td>:negative_squared_cross_mark:</td>
-      <td>:negative_squared_cross_mark:</td>
-      <td>:negative_squared_cross_mark:</td>
+      <td>:white_check_mark:</td>
+      <td>:white_check_mark:</td>
+      <td>:white_check_mark:</td>
+      <td>:white_check_mark:</td>
   </tr>
   <tr>
       <td>LOG_CHANNEL_ID</td>
       <td>:x:</td>
       <td>:x:</td>
-      <td>:negative_squared_cross_mark:</td>
+      <td>:white_check_mark:</td>
       <td>:x:</td>
   </tr>
   <tr>
       <td>ADMIN_CHANNEL_ID</td>
       <td>:x:</td>
       <td>:x:</td>
-      <td>:negative_squared_cross_mark:</td>
-      <td>:negative_squared_cross_mark:</td>
+      <td>:white_check_mark:</td>
+      <td>:white_check_mark:</td>
   </tr>
 </table>
 
