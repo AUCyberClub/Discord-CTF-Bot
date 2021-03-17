@@ -95,7 +95,7 @@ class DB():
         self.cursor.execute(f"SELECT *  FROM `users`")
         res = self.cursor.fetchall()
         return res
-    def addUser(selfdiscord_id):
+    def addUser(self,discord_id):
         self.check_cursor()
         self.cursor.execute(f"""INSERT INTO `users` (`solved_challenge_ids`, `total_points`,`discord_id`) VALUES ('', '0','{discord_id}');""")
         self.db.commit()
