@@ -119,6 +119,24 @@ async def addChallenge(ctx, challenge, flag, point):
         await ctx.send("Challenge eklendi!")
     else:
         await ctx.send("Ben aslında yoğum!")
+@client.command(name="deleteUser",description=f'{client.command_prefix}deleteUser discord_id',brief=f'{client.command_prefix}deleteUser discord_id')
+async def deleteUser(ctx, discord_id):
+    if ctx.channel == client.get_channel(ADMIN_CHANNEL_ID):
+        database.deleteUser(discord_id)
+        await updateScoreBoard()
+        await ctx.send("<@{}> şutlandı!".format(discord_id))
+
+    else:
+        await ctx.send("Başarısızlıklar söz konusu :(")
+@client.command(name="addUser",description=f'{client.command_prefix}addUser discord_id',brief=f'{client.command_prefix}addUser discord_id')
+async def addUser(ctx, discord_id):
+    if ctx.channel == client.get_channel(ADMIN_CHANNEL_ID):
+        database.addUser(discord_id)
+        await updateScoreBoard()
+        await ctx.send("Tamamdır. <@{}>, scoreboarda eklendi.".format(discord_id))
+
+    else:
+        await ctx.send("Başarısızlıklar söz konusu :(")
 @client.command(name="showChallenges",description=f'{client.command_prefix}showChallenges',brief=f'{client.command_prefix}showChallenges')
 async def showChallenges(ctx):
     if ctx.channel == client.get_channel(ADMIN_CHANNEL_ID):
