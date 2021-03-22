@@ -80,7 +80,7 @@ Veritabanı olarak istediğinizi kullanabilirsiniz.
 
 # TODO
 
-- [ ] Kullanıcı silme ekleme
+:heavy_check_mark: Kullanıcı silme ekleme
 - [ ] Çeviri kolaylığı için tüm mesajları düzgün formatta toplama
 - [ ] Github -> Heroku integrasyonunu yapma
 - [ ] config.py'yi çevre değişkenleriyle çalışabilir yapma
