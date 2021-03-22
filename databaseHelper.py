@@ -99,6 +99,10 @@ class DB():
         self.check_cursor()
         self.cursor.execute(f"""INSERT INTO `users` (`solved_challenge_ids`, `total_points`,`discord_id`) VALUES ('', '0','{discord_id}');""")
         self.db.commit()
+    def deleteUser(self, discord_id):
+        self.check_cursor()
+        self.cursor.execute(f"""DELETE FROM `users` WHERE (`discord_id` = "{discord_id}");""")
+        self.db.commit()
     def getUser(self,discord_id):
         self.check_cursor()
         self.cursor.execute(f"SELECT *  FROM `users` WHERE `discord_id`='{discord_id}'")
