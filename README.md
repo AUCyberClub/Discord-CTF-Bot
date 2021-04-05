@@ -80,6 +80,8 @@ Veritabanı olarak istediğinizi kullanabilirsiniz.
 
 # TODO
 :heavy_check_mark: Kullanıcı silme ekleme
+- [ ] !rank komutuna çözülen challengeları da ekleme.
+- [ ] Veritabanında kolaylık açısından kullanıcı ismini de tutma.
 - [ ] Çeviri kolaylığı için tüm mesajları düzgün formatta toplama
 - [ ] Github -> Heroku integrasyonunu yapma
 - [ ] config.py'yi çevre değişkenleriyle çalışabilir yapma
