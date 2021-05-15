@@ -164,14 +164,18 @@ async def updateScoreboard(ctx):
         await ctx.send("Ben aslında yoğum")
 
 
-@client.command(name="rank",description='Puanını gösterir',brief='Puanını gösterir')
+@client.command(name="rank",description='Puanını ve çözdüğün challengeları gösterir',brief='Puanını ve çözdüğün challengeları gösterir')
 async def rank(ctx):
-    username = ctx.author.name
 
     user=database.getUser(ctx.author.id)
     if user:
         total_points = user["total_points"]
-        await ctx.send(f"Hey {ctx.author.mention} toplamda `{total_points}` puanın var!")
+        solved_challenges =', '.join(database.getChallengeNames(ctx.author.id,solved=True))
+        unolved_challenges =', '.join(database.getChallengeNames(ctx.author.id,solved=False))
+        msg =f"Hey {ctx.author.mention} toplamda `{total_points}` puanın var!"
+        msg+=f"\n\nÇözdüğün challengelar:\n```\n{solved_challenges}\n```"
+        msg+=f"Henüz çözmediğin challengelar:\n```\n{unolved_challenges}\n```"
+        await ctx.send(msg)
     else:
         await ctx.send(f"Hey {ctx.author.mention} toplamda `0` puanın var")
 

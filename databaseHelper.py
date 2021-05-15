@@ -111,20 +111,27 @@ class DB():
             self.addUser(discord_id)
             res = self.getUser(discord_id)
         return res
-    def getSolvedChallenges(self,discord_id):
+    def getChallengeNames(self,discord_id,solved):
         self.check_cursor()
         user=self.getUser(discord_id)
-        solved_challenge_ids = user['solved_challenge_ids'].split(',')[:-1]
-        ret = []
-        for i in solved_challenge_ids:
-            ret.append(self.getChallengewithID(i)["name"])
-        return ret
+        solved_challenge_ids = user['solved_challenge_ids'][:-1]
+        if solved:
+            if solved_challenge_ids=='':
+                return ['Yok']
+            self.cursor.execute(f"SELECT name FROM challenges WHERE id IN ({solved_challenge_ids})")
+        else:
+            if (solved_challenge_ids.count(',')+1)==len(self.getChallenges()):
+                return ['Yok']
+            if solved_challenge_ids=='':
+                solved_challenge_ids='0'
+            self.cursor.execute(f"SELECT name FROM challenges WHERE id NOT IN ({solved_challenge_ids})")
+        return [i['name'] for i in self.cursor.fetchall()]
     def isCorrectFlag(self, flag, discord_id):
         self.check_cursor()
         challenges=self.getChallenges()
         for challenge in challenges:
             if flag==challenge["flag"]:
-                solved_challenges=self.getSolvedChallenges(discord_id)
+                solved_challenges=self.getChallengeNames(discord_id,solved=True)
                 if challenge["name"] not in solved_challenges:
                     return ("CorrectFlag",challenge)
                 else:
