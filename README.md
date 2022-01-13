@@ -79,8 +79,12 @@ Veritabanı olarak istediğinizi kullanabilirsiniz.
 
 
 # TODO
+:heavy_check_mark: Kullanıcı silme ekleme. [mucahitkurtlar](https://github.com/mucahitkurtlar)'a teşekkür ederiz.
 
-:heavy_check_mark: Kullanıcı silme ekleme
+:heavy_check_mark: !rank komutuna çözülen challengeları da ekleme.
+- [ ] :bangbang::bangbang: Mesaj kanalının database olarak kullanma.
+- [ ] :bangbang::bangbang: Sql query'lerini Prepared Statement'lara çevirme.
+- [ ] Veritabanında kolaylık açısından kullanıcı ismini de tutma.
 - [ ] Çeviri kolaylığı için tüm mesajları düzgün formatta toplama
 - [ ] Github -> Heroku integrasyonunu yapma
 - [ ] config.py'yi çevre değişkenleriyle çalışabilir yapma
