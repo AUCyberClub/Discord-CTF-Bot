@@ -1,1 +1,1 @@
-worker: python ctfBotTurkce.py
+worker: python ctfBot.py
