@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-12 19:17+0300\n"
+"PO-Revision-Date: 2022-01-24 15:04+0300\n"
+"Last-Translator: Mücahit KURTLAR <EMAIL@ADDRESS>\n"
+"Language-Team: Turkish <LL@li.org>\n"
+"Language: Turkish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Hi {ctx.author.name}"
+msgstr "Merhaba {ctx.author.name}"
+
+msgid "Help message"
+msgstr "Yardım mesajı"
+
+msgid "Scoreboard initialized."
+msgstr "Scoreboard oluşturuldu."
+
+msgid "Scoreboard updated."
+msgstr "Scoreboard güncellendi."
+
+msgid "Say hello to our bot!"
+msgstr "Botumuza merhaba de!"
+
+msgid "You should send me flag from DM, {client.command_prefix}enterflag <flag>"
+msgstr "Flagi bana özelden göndermen gerek, {client.command_prefix}enterflag <flag>"
+
+msgid "`{username}` has send `{flag}` in dm."
+msgstr "`{username}`, `{flag}` flagini özelden gönderdi"
+
+msgid "Come on! You already solved `{challenge_name}` challenge."
+msgstr "Hadi ama! `{challenge_name}` challengeını çoktan çözdün."
+
+msgid "`{username}` found flag for , `{challenge_name}` challenge."
+msgstr "`{username}`, `{challenge_name}` challengeı için flag buldu."
+
+msgid "Yey! You found flag for `{challenge_name}` challenge! Dont forget to check out the scoreboard!"
+msgstr "Muhteşemsin! `{challenge_name}` challengeı için flag buldun. Scoreboarda bakmayı unutma!"
+
+msgid "{ctx.author.mention} , found flag for `{challenge_name}` challenge."
+msgstr "{ctx.author.mention} `{challenge_name}` challengeı için flag buldu."
+
+msgid "{ctx.author.mention} Please send flag from DM. Flag format: `{client.command_prefix}enterflag <flag>`"
+msgstr "{ctx.author.mention} Lütfen flagi bana özelden gönder. Flag format: `{client.command_prefix}enterflag <flag>`"
+
+msgid "Challenge added!"
+msgstr "Challenge eklendi!"
+
+msgid "There is no spoon"
+msgstr "Ben aslında yoğum"
+
+msgid "Ok. <@{}>, added to scoreboard."
+msgstr "Tamamdır. <@{}>, scoreboarda eklendi."
+
+msgid "{challengeName} deleted!"
+msgstr "{challengeName} silindi!"
+
+msgid "Scoreboard Updated"
+msgstr "Scoreboard güncellendi"
+
+msgid "Shows your point and solved challenges"
+msgstr "Puanını ve çözdüğün challengeları gösterir"
+
+msgid "Hi {ctx.author.mention}! You have `{total_points}` point!"
+msgstr "Merhaba {ctx.author.mention}! Toplamda `{total_points}` puanın var!"
+
+msgid "The challenges that you solved:"
+msgstr "Çözdüğün challengelar:"
+
+msgid "And you didnt:"
+msgstr "Ve çözmediklerin:"
+
+msgid "Hi {ctx.author.mention}! You have `0` point"
+msgstr "Merhaba {ctx.author.mention}! Toplamda `0` puanın var"
+
+msgid "{client.user.name} has connected to Discord!"
+msgstr "{client.user.name} Discorda bağlandı!"
+
+msgid "Sorry :( This is not a valid flag..."
+msgstr "Üzgünüm :( Böyle bir flag yok..."
+
+msgid "RANK"
+msgstr "SIRA"
+
+msgid "PLAYER"
+msgstr "OYUNCU"
+
+msgid "POINT"
+msgstr "PUAN"
