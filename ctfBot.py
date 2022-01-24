@@ -9,12 +9,12 @@ from discord.ext import commands
 from discord.ext.commands import CommandNotFound
 from config import TOKEN, SCOREBOARD_CHANNEL_ID, CHALLENGES_CHANNEL_ID, DISCUSSION_CHANNEL_ID
 from config import LOG_CHANNEL_ID, ADMIN_CHANNEL_ID
-from config import HOST, USERNAME, PASSWORD,PORT, DATABASE,COMMAND_PREFIX
+from config import HOST, USERNAME, PASSWORD,PORT, DATABASE,COMMAND_PREFIX, LANGUAGE
 from databaseHelper import DB
 
 # please select your bot's language here
 # lütfen botun dilini seçin
-lang_translations = gettext.translation('base', localedir='locale', languages=['tr'])
+lang_translations = gettext.translation('base', localedir='locale', languages=[LANGUAGE])
 lang_translations.install()
 
 # define _ shortcut for translations
