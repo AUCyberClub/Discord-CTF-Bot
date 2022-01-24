@@ -11,3 +11,6 @@ USERNAME              = "<USERNAME>"            #string
 PASSWORD              = "<PASSWORD>"            #string
 PORT                  = <PORT>                  #integer
 DATABASE              = "<DATABASE>"            #string
+
+
+LANGUAGE              ="<BOT_LANGUAGE>"         #string, ex "tr","en"
