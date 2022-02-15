@@ -14,7 +14,6 @@ CHALLENGES_CHANNEL_ID = int(os.getenv("DISCORD_CHALLENGES_CHANNEL_ID"))  #intege
 DISCUSSION_CHANNEL_ID = int(os.getenv("DISCORD_DISCUSSION_CHANNEL_ID"))  #integer
 LOG_CHANNEL_ID        = int(os.getenv("DISCORD_LOG_CHANNEL_ID"))         #integer
 ADMIN_CHANNEL_ID      = int(os.getenv("DISCORD_ADMIN_CHANNEL_ID"))       #integer
-DATABASE_CHANNEL_ID   = int(os.getenv("DISCORD_DATABASE_CHANNEL_ID"))    #integer
 
 #DATABASE RELATED
 HOST                  = os.getenv("DATABASE_HOST")                       #string
