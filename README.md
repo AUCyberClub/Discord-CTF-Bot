@@ -79,6 +79,8 @@ Veritabanı olarak istediğinizi kullanabilirsiniz.
 
 
 # TODO
+- [ ] Yükleme adımlarını güncelleme(github actions ile çalışıyor)
+
 :heavy_check_mark: Kullanıcı silme ekleme. [mucahitkurtlar](https://github.com/mucahitkurtlar)
 
 :heavy_check_mark: !rank komutuna çözülen challengeları da ekleme.
@@ -89,8 +91,10 @@ Veritabanı olarak istediğinizi kullanabilirsiniz.
 
 :heavy_check_mark: Çeviri kolaylığı için tüm mesajları düzgün formatta toplama.[mucahitkurtlar](https://github.com/mucahitkurtlar), [ilgili PR](https://github.com/AUCyberClub/Discord-CTF-Bot/pull/3)
 
-- [ ] Github -> Heroku integrasyonunu yapma
-- [ ] config.py'yi çevre değişkenleriyle çalışabilir yapma
+:heavy_check_mark: Github -> Heroku integrasyonunu yapma
+
+:heavy_check_mark: config.py'yi çevre değişkenleriyle çalışabilir yapma
+
 - [ ] README.md yi ingilizce yapma
 - [ ] Gerekli kanalları otomatik açma ve izinleri ayarlama
 
