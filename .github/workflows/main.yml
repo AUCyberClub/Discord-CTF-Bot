@@ -1,0 +1,35 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "${{secrets.APP_NAME}}" #Must be unique in Heroku
+          heroku_email: "${{secrets.HEROKU_MAIL}}"
+          buildpack: "https://github.com/heroku/heroku-buildpack-python"
+          remote_branch: "master"
+        env:
+          HD_DISCORD_TOKEN: ${{secrets.DISCORD_TOKEN}} # must start with HD_ to work with actions
+          HD_DISCORD_COMMAND_PREFIX: ${{secrets.DISCORD_COMMAND_PREFIX}}
+          HD_DISCORD_SCOREBOARD_CHANNEL_ID: ${{secrets.DISCORD_SCOREBOARD_CHANNEL_ID}}
+          HD_DISCORD_CHALLENGES_CHANNEL_ID: ${{secrets.DISCORD_CHALLENGES_CHANNEL_ID}}
+          HD_DISCORD_DISCUSSION_CHANNEL_ID: ${{secrets.DISCORD_DISCUSSION_CHANNEL_ID}}
+          HD_DISCORD_LOG_CHANNEL_ID: ${{secrets.DISCORD_LOG_CHANNEL_ID}}
+          HD_DISCORD_ADMIN_CHANNEL_ID: ${{secrets.DISCORD_ADMIN_CHANNEL_ID}}
+
+          HD_DATABASE_HOST: ${{secrets.DATABASE_HOST}}
+          HD_DATABASE_USERNAME: ${{secrets.DATABASE_USERNAME}}
+          HD_DATABASE_PASSWORD: ${{secrets.DATABASE_PASSWORD}}
+          HD_DATABASE_PORT: ${{secrets.DATABASE_PORT}}
+          HD_DATABASE_DATABASE: ${{secrets.DATABASE_DATABASE}}
+
+          HD_BOT_LANGUAGE: ${{secrets.BOT_LANGUAGE}}
