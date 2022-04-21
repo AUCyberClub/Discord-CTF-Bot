@@ -91,7 +91,7 @@ Veritabanı olarak istediğinizi kullanabilirsiniz.
 
 :heavy_check_mark: Çeviri kolaylığı için tüm mesajları düzgün formatta toplama.[mucahitkurtlar](https://github.com/mucahitkurtlar), [ilgili PR](https://github.com/AUCyberClub/Discord-CTF-Bot/pull/3)
 
-:heavy_check_mark: Github -> Heroku integrasyonunu yapma
+:x: Github -> Heroku integrasyonunu yapma (iptal edildi)
 
 :heavy_check_mark: config.py'yi çevre değişkenleriyle çalışabilir yapma
 
